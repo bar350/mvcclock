@@ -5,6 +5,13 @@ import SetNowCommand from './SetNowCommand.js'
 import SetDateCommand from './SetDateCommand.js'
 
 class TimeController {
+    /* The TimeController is responsible for interacting with both the models and controllers.
+        This is handled both directly, when updating the time and indirectly when receiving the
+        updated time or calls from the view. So all data passed in to the Controller will be through
+        Events. Whereas the controller will call many functions outside of it.
+
+        The controller creates Commands and stores these in the redo array in order to allow undo and redo operations
+     */
     constructor() {
         this.model = new TimeModel();
         this.views = [];
