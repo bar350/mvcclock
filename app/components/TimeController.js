@@ -117,7 +117,7 @@ class TimeController {
     }
 
     redoIt(sender, args) {
-        if(this.redoPointer < this.redo.length) {
+        if(this.redoPointer < (this.redo.length-1)) {
             console.log('redo')
             var cmd = this.redo[this.redoPointer+1]
             this.redoPointer += 1

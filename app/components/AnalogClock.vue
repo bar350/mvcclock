@@ -64,7 +64,9 @@
               var am = true;
               var hour = this.date.hour;
               if (hour >= 12) {
-                  hour -= 12;
+                  if(hour > 12) {
+                      hour -= 12;
+                  }
                   am = false;
               }
               return (
