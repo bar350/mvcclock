@@ -39,3 +39,22 @@ But it really helped me understand more of what is happening under the hood in J
 
 ## UML Diagram 
 ![UML Diagram](images/classUML.png)
+
+
+## Testing Instructions
+
+Testing the application can be done in two ways. 
+The first method is to use an iOS simulator. 
+Then using the mvcclock.app file in the bin directory drag it onto the iOS simulator and it will install the application which can be tested there.
+
+The second method is to put the application onto a device. This is difficult because of Apple's security features.
+To do that you will need familiarity with creating a signing certificate and a provisioning profile for your device, set these up in Xcode.
+Then you can download this project, change the nativescript id in the package.json file to the value of your provisioning profile, and use the following commands:
+
+```bash
+# Install dependencies
+npm install
+
+# Build, watch for changes and run the application
+tns run ios --bundle
+```
