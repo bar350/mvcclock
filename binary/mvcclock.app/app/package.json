@@ -1,8 +1,8 @@
 {
-  "android": {
-    "v8Flags": "--expose_gc"
-  },
-  "main": "main",
-  "name": "mvcclock",
-  "version": "1.0.0"
+    "android": {
+        "v8Flags": "--expose_gc"
+    },
+    "main": "starter",
+    "name": "mvcclock",
+    "version": "1.0.0"
 }
